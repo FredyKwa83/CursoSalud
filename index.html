@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas de Cursos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="container header-container">
+            <img src="logo.png" alt="Logo de la Empresa" class="logo">
+            <h1>ASESORÍA LOGÍSTICA Y CAPACITACIÓN OCUPACIONAL</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#courses">Cursos</a></li>
+                    <li><a href="#about">Acerca de</a></li>
+                    <li><a href="#testimonials">Testimonios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Principal -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <!-- <h2>Descubre Nuestros Cursos Online</h2>
+            <p>Desarrolla nuevas habilidades y conocimientos desde la comodidad de tu hogar.</p>
+            <a href="#courses" class="cta-button">Ver Cursos</a> -->
+            
+            <!-- Carrusel de Imágenes -->
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="imagen1.jpg" alt="Imagen 1">
+                    <img src="imagen2.jpg" alt="Imagen 2">
+                    <img src="imagen3.jpg" alt="Imagen 3">
+                    <img src="imagen4.jpg" alt="Imagen 4">
+                    <img src="imagen5.jpg" alt="Imagen 5">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Sección de Cursos -->
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <h2>Cursos Disponibles</h2>
+            <div class="course-list">
+                <article class="course-item">
+                    <h3>Brigada Integral de Emergencias</h3>
+                    <img src="curso1.jpg" class="d-block w-100" alt="Curso 1">
+                    <p></p>
+                    <a href="#" class="cta-button">Más Información</a>
+                </article>
+                <article class="course-item">
+                    <h3>Atencion de Victimas de Violencia</h3>
+                    <img src="curso2.jpg" class="d-block w-100" alt="Curso 2">
+                    <p></p>
+                    <a href="#" class="cta-button">Más Información</a>
+                </article>
+                <article class="course-item">
+                    <h3>Atencion de Victimas de Violencia</h3>
+                    <img src="curso3.jpg" class="d-block w-100" alt="Curso 3">
+                    <p></p>
+                    <a href="#" class="cta-button">Más Información</a>
+                </article>
+                <!-- Añadir más cursos según sea necesario -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Acerca de -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>Acerca de Nosotros</h2>
+            <p>Somos una empresa prestadora de servicios en las áreas logísticas, asesorías y
+                capacitaciones ocupacionales ayudando a nuestros clientes a alcanzar sus metas
+                de negocios proporcionándoles servicios y soluciones innovadoras, brindándoles un
+                producto de calidad y con un excelente servicio.</p>
+                <p>Ser una de las mejores empresas a nivel nacional en la prestación de asesorías,
+                    capacitación e innovación de nuestros servicios, y servir de guía a todos nuestros
+                    clientes que necesiten de nuestros conocimientos y apoyos logísticos, y poderles
+                    ayudar en su crecimiento de cada una de sus áreas laborales, por medio de nuestra
+                    calidad humana y profesionalismo de nuestro personal</p>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2>Lo Que Dicen Nuestros Estudiantes</h2>
+            <div class="testimonial-list">
+                <article class="testimonial-item">
+                    <p>"El curso de desarrollo web cambió mi vida. Ahora trabajo como desarrollador en una gran empresa."</p>
+                    <h4>- Juan Pérez</h4>
+                </article>
+                <article class="testimonial-item">
+                    <p>"Gracias al curso de Python, pude mejorar mis habilidades y obtener un ascenso en mi trabajo."</p>
+                    <h4>- María García</h4>
+                </article>
+                <!-- Añadir más testimonios según sea necesario -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <form action="#" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="cta-button">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Academia de Cursos Online. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const track = document.querySelector('.carousel-track');
+        const images = Array.from(track.children);
+        const imageWidth = images[0].getBoundingClientRect().width;
+
+        let currentIndex = 0;
+        const totalImages = images.length;
+
+        function moveToIndex(index) {
+            const newTransform = -index * imageWidth;
+            track.style.transform = `translateX(${newTransform}px)`;
+        }
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % totalImages;
+            moveToIndex(currentIndex);
+        }, 3000); // Cambia la imagen cada 3 segundos
+    });
+</script>
+
+</html>

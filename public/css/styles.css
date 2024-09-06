@@ -1,0 +1,475 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-section h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #ff4500;
+}
+
+/* Courses Section Styles */
+.courses-section {
+    background-color: #0046a1;
+    padding: 60px 0;
+}
+
+.course-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.course-item {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.course-item h3 {
+    margin-top: 0;
+}
+
+/* About Section Styles */
+.about-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Testimonials Section Styles */
+.testimonials-section {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.testimonial-item {
+    margin-bottom: 20px;
+}
+
+.testimonial-item h4 {
+    margin-top: 10px;
+}
+
+/* Contact Section Styles */
+.contact-section {
+    padding: 60px 0;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section label {
+    margin-bottom: 5px;
+}
+
+.contact-section input, .contact-section textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+.carousel-item {
+    transition: transform 2s ease; /* 2 segundos para una transición más suave */
+}
+
+/* Asegura que las imágenes ocupen el 100% del ancho del contenedor */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Asegura que el carrusel sea de ancho completo y que las imágenes estén en línea */
+.carousel-inner {
+    display: flex;
+}
+
+.carousel-item {
+    flex: 0 0 100%; /* Cada imagen ocupa el 100% del ancho */
+}
+/* Estilo para reducir el tamaño de las imágenes dentro de course-item */
+.course-item img {
+    max-width: 80%; /* Reduce el tamaño máximo al 80% del contenedor */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px; /* Bordes redondeados */
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+/* Opcional: Estilo adicional para el contenedor de los cursos */
+.course-item {
+    margin-bottom: 20px;
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #ddd; 
+    padding: 10px; 
+    border-radius: 8px;
+}
+
+/* Estilo general para los artículos de curso */
+.course-item {
+    text-align: center; /* Centra todo el contenido del artículo, incluyendo el botón */
+    margin-bottom: 20px; /* Espacio inferior entre los artículos */
+}
+
+/* Estilo para los botones */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff; /* Cambia este color según tu diseño */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px; /* Espacio superior al botón */
+}
+
+/* Opcional: Estilo para el contenedor de la lista de cursos */
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Opcional: Estilo para que las imágenes ocupen todo el ancho */
+.course-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Espacio entre la imagen y el botón */
+}
+
+/* Estilo para centrar el título de la sección de cursos */
+.courses-section h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Espacio inferior para separar el título de los cursos */
+}
+/* Reducir el espacio superior de la sección de cursos */
+
+.courses-section {
+    padding-top: 20px; /* Reduce el espacio superior */
+}
+
+/* Centrar el título y agregar espacio inferior */
+.courses-section h2 {
+    text-align: center;
+    margin-bottom: 30px; /* Incrementa este valor para más espacio entre el título y las imágenes */
+}
+
+.header-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    max-width: 150px; /* Ajusta este valor para hacer el logo más grande o más pequeño */
+    margin-bottom: 10px; /* Espacio entre el logo y el título */
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em; /* Puedes ajustar el tamaño del texto si es necesario */
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.courses-section h2 {
+    font-size: 2.3em; /* Ajusta este valor para cambiar el tamaño del texto */
+    color: rgb(255, 255, 255); /* Cambia el color del texto a rojo */
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 20px; /* Ajusta según sea necesario */
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    width: 100%;
+    flex: 0 0 100%; /* Cada imagen ocupa el 100% del contenedor */
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.carousel-track {
+    animation: slide 20s infinite linear;
+}
+.hero-section {
+    position: relative;
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 80%; /* Ajusta el ancho del carrusel */
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
+    max-width: 800px; /* Limita el tamaño máximo del carrusel */
+    margin-top: 20px; /* Ajusta según sea necesario */
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    width: 200px; /* Ajusta el tamaño de las imágenes */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    margin-right: 10px; /* Espacio entre imágenes */
+    flex: 0 0 auto; /* Impide que las imágenes se estiren */
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.carousel-track {
+    animation: slide 20s infinite linear;
+}
+.hero-section {
+    position: relative;
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 80%; /* Ajusta el ancho del carrusel */
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
+    max-width: 1000px; /* Limita el tamaño máximo del carrusel */
+    margin-top: 20px; /* Ajusta según sea necesario */
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    width: 100%; /* Ajusta el ancho de las imágenes al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    flex: 0 0 20%; /* Ajusta el tamaño de las imágenes dentro del contenedor */
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.carousel-track {
+    animation: slide 20s infinite linear;
+}
+
+.hero-section {
+    position: relative;
+    text-align: center;
+    margin: 0; /* Elimina el margen en la sección */
+    padding: 0; /* Elimina el relleno en la sección */
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 80%; /* Ajusta el ancho del carrusel */
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
+    max-width: 1000px; /* Limita el tamaño máximo del carrusel */
+    padding: 0; /* Elimina el relleno en el carrusel */
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    margin: 0; /* Elimina el margen en el track */
+}
+
+.carousel img {
+    width: 100%; /* Ajusta el ancho de las imágenes al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    flex: 0 0 20%; /* Ajusta el tamaño de las imágenes dentro del contenedor */
+    margin: 0; /* Elimina el margen en las imágenes */
+    padding: 0; /* Elimina el relleno en las imágenes */
+}
+
+.hero-section {
+    position: relative;
+    text-align: center;
+    margin: 0; /* Elimina el margen en la sección */
+    padding: 0; /* Elimina el relleno en la sección */
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 80%; /* Ajusta el ancho del carrusel */
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
+    max-width: 1000px; /* Limita el tamaño máximo del carrusel */
+    padding: 0; /* Elimina el relleno en el carrusel */
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    margin: 0; /* Elimina el margen en el track */
+}
+
+.carousel img {
+    width: 100%; /* Ajusta el ancho de las imágenes al ancho del contenedor */
+    height: 300px; /* Ajusta la altura de las imágenes */
+    object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
+    margin: 0; /* Elimina el margen en las imágenes */
+    padding: 0; /* Elimina el relleno en las imágenes */
+}
+
+.hero-section {
+    position: relative;
+    text-align: center;
+    margin: 0; /* Elimina el margen en la sección */
+    padding: 0; /* Elimina el relleno en la sección */
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 80%; /* Ajusta el ancho del carrusel */
+    margin: 20px auto 0; /* Añade espacio arriba del carrusel y centra horizontalmente */
+    max-width: 1000px; /* Limita el tamaño máximo del carrusel */
+    padding: 0; /* Elimina el relleno en el carrusel */
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    margin: 0; /* Elimina el margen en el track */
+}
+
+.carousel img {
+    width: 100%; /* Ajusta el ancho de las imágenes al ancho del contenedor */
+    height: 300px; /* Ajusta la altura de las imágenes */
+    object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
+    margin: 0; /* Elimina el margen en las imágenes */
+    padding: 0; /* Elimina el relleno en las imágenes */
+}
+
+.about-section p {
+    text-align: justify; /* Justifica el texto */
+    margin-left: 60px;
+    margin-right:60px;
+    
+    
+}
+

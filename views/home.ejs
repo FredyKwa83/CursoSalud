@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Asesoría Logística y Capacitación Ocupacional</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="container header-container">
+            <img src="/images/logo.png" alt="Logo de la Empresa" class="logo">
+            <h1>ASESORÍA LOGÍSTICA Y CAPACITACIÓN OCUPACIONAL</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/cursos">Cursos</a></li>
+                    <li><a href="/acerca-de">Acerca de</a></li>
+                    <li><a href="/testimonios">Testimonios</a></li>
+                    <li><a href="/contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Principal -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <!-- Carrusel de Imágenes -->
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="/images/imagen1.jpg" alt="Imagen 1">
+                    <img src="/images/imagen2.jpg" alt="Imagen 2">
+                    <img src="/images/imagen3.jpg" alt="Imagen 3">
+                    <img src="/images/imagen4.jpg" alt="Imagen 4">
+                    <img src="/images/imagen5.jpg" alt="Imagen 5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Cursos -->
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <h2>Cursos Disponibles</h2>
+            <div class="course-list">
+                <% productos.forEach(producto => { %>
+                <article class="course-item" data-id="<%= producto.id %>">
+                    <h3><%= producto.nombre %></h3>
+                    <!-- Asegúrate de que la ruta a la imagen es correcta -->
+                    <img src="/uploads/<%= producto.imagen %>" class="d-block w-100" alt="<%= producto.nombre %>">
+                    <p><%= producto.descripcion %></p>
+                    <a href="<%= producto.enlace %>" class="cta-button">Más Información</a>
+                </article>
+                <% }) %>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Sección Acerca de -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>Acerca de Nosotros</h2>
+            <p>Somos una empresa prestadora de servicios en las áreas logísticas, asesorías y capacitaciones ocupacionales, ayudando a nuestros clientes a alcanzar sus metas de negocios proporcionándoles servicios y soluciones innovadoras, brindándoles un producto de calidad y con un excelente servicio.</p>
+            <p>Nuestra misión es ser una de las mejores empresas a nivel nacional en la prestación de asesorías, capacitación e innovación de nuestros servicios. Queremos servir de guía a todos nuestros clientes que necesiten de nuestros conocimientos y apoyos logísticos, ayudándoles en el crecimiento de cada una de sus áreas laborales, por medio de nuestra calidad humana y profesionalismo de nuestro personal.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2>Lo Que Dicen Nuestros Estudiantes</h2>
+            <div class="testimonial-list">
+                <article class="testimonial-item">
+                    <p>"El curso de desarrollo web cambió mi vida. Ahora trabajo como desarrollador en una gran empresa."</p>
+                    <h4>- Juan Pérez</h4>
+                </article>
+                <article class="testimonial-item">
+                    <p>"Gracias al curso de Python, pude mejorar mis habilidades y obtener un ascenso en mi trabajo."</p>
+                    <h4>- María García</h4>
+                </article>
+                <!-- Añadir más testimonios según sea necesario -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <form action="#" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="cta-button">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Asesoría Logística y Capacitación Ocupacional. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Producto</title>
+</head>
+<body>
+    <h1>Eliminar Producto</h1>
+    <p>¿Estás seguro que deseas eliminar el siguiente producto?</p>
+    
+    <div>
+        <h2><%= producto.nombre %></h2>
+        <img src="/uploads/<%= producto.imagen %>" alt="Imagen del producto" style="width: 150px;">
+        <p><strong>Descripción:</strong> <%= producto.descripcion %></p>
+        <p><strong>Enlace:</strong> <a href="<%= producto.enlace %>" target="_blank">Ver producto</a></p>
+    </div>
+
+    <form action="/productos/eliminar/<%= producto.id %>" method="POST">
+        <button type="submit">Eliminar Producto</button>
+    </form>
+
+    <a href="/">Cancelar</a>
+</body>
+</html>
+

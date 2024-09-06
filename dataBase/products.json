@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "nombre": "Brigada Integral de Emergencias",
+    "imagen": "curso1.jpg",
+    "descripcion": "Aprende a manejar situaciones de emergencia con este curso integral.",
+    "enlace": "#"
+  },
+  {
+    "id": 3,
+    "nombre": "Gestión Logística Empresarial",
+    "imagen": "curso3.jpg",
+    "descripcion": "Optimiza la cadena de suministro con conocimientos en logística empresarial.",
+    "enlace": "#"
+  },
+  {
+    "id": 4,
+    "nombre": "marcador morado",
+    "imagen": "SSSS",
+    "descripcion": "FDFDFDF",
+    "enlace": "FDFD"
+  },
+  {
+    "id": 5,
+    "nombre": "enfermeria ",
+    "imagen": "1725656169158.jpg",
+    "descripcion": "para enfermeros",
+    "enlace": "https://www.youtube.com/"
+  },
+  {
+    "id": 6,
+    "nombre": "marcador morado",
+    "imagen": "1725321742323.jpg",
+    "descripcion": "nuevo curso",
+    "enlace": "SSSS"
+  }
+]

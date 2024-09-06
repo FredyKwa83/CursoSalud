@@ -1,0 +1,17 @@
+<form action="/productos/crear" method="POST" enctype="multipart/form-data">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="imagen">Imagen:</label> <!-- Cambiado de "URL de la Imagen" a "Imagen" -->
+    <input type="file" id="imagen" name="imagen" required> <!-- Cambiado type="text" a type="file" -->
+
+    <label for="descripcion">Descripción:</label>
+    <textarea id="descripcion" name="descripcion" required></textarea>
+
+    <label for="enlace">Enlace:</label>
+    <input type="text" id="enlace" name="enlace" required>
+
+    <button type="submit">Crear Producto</button>
+</form>
+
+
