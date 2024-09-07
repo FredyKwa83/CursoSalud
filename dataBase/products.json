@@ -33,5 +33,12 @@
     "imagen": "1725321742323.jpg",
     "descripcion": "nuevo curso",
     "enlace": "SSSS"
+  },
+  {
+    "id": 7,
+    "nombre": "curso de alturas ",
+    "imagen": "1725751916676.jpg",
+    "descripcion": "curso de alturas para la industria ",
+    "enlace": "ssss"
   }
 ]
